@@ -1,0 +1,97 @@
+body {
+	color: #fff;
+}
+
+@font-face {
+    font-family: 'netmarbleB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.1/netmarbleB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {margin-top: 50px}
+
+.choice-container {
+	display: flex;
+	margin-bottom: 0.8rem;
+	width: 100%;
+	border-radius: 4px;
+	background: turquoise;
+	font-size: 3rem;
+	min-width: 80rem;
+}
+
+.choice-container:hover {
+	cursor: pointer;
+	box-shadow: 0 0.4rem 1.4rem 0 blue;
+	transform: scale(1.02);
+	transform: transform 100ms;
+}
+
+.choice-prefix {
+	padding: 2rem 2.5rem;
+	color: midnightblue;
+}
+
+.choice-text {
+	padding: 2rem;
+	width: 100%;
+	color: midnightblue;
+}
+
+.correct {
+	background: green;
+}
+
+.incorrect {
+	background: red;
+}
+
+#reaction {color: black;}
+
+/* 헤드 업 */
+#hud {
+	display: flex;
+	justify-content: space-between; color: black;
+}
+
+.hud-prefix {
+	text-align: center;
+	font-size: 2rem;
+}
+
+.hud-main-text {
+	text-align: center;
+}
+
+#progressBar {
+	width: 20rem;
+	height: 3rem;
+	border: 0.2rem solid green;
+	margin-top: 2rem;
+	border-radius: 50px;
+	overflow: hidden;
+}
+
+#progressBarFull {
+	height: 100%;
+	background: green;
+	width: 0%;
+}
+
+@media screen and (max-width:  768px) {
+	.choice-container {
+		min-width: 40rem;
+	}
+}
+
+.bee2 {width: 1000px; height: 250px; }
+.animate {position: absolute; left: 1200px; offset-anchor: center; animation: buzz 5s ease-in-out infinite;}
+
+@keyframes buzz {
+	0% {left: 1200px; rotate: 0deg;}
+	50% {left: 150px; rotate: 0deg;}
+	60% {rotate: -180deg;}
+	90% {rotate: -180deg}
+	100% {left: 1200px; rotate: -360deg;}
+}

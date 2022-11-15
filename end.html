@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<style type="text/css">
+		img {margin-bottom: -50px; width: 300px;}
+		@keyframes spin {
+			0% { transform: rotateX(0deg); }
+    		100% { transform: rotateX(360deg); }
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="container">
+		<div id="end" class="flex-center flex-column">
+			<img src="bee.gif">
+			<h1 id="finalScore">0</h1>
+			<form class="end-form-container">
+				<h2 id="end-text">점수를 저장하려면 아래에 이름을 입력하세요.</h2>
+				<input type="text" name="name" id="username" placeholder="Enter your name">
+				<button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled>Save</button>
+			</form>
+			<a href="game.html" class="btn">Play Again</a>
+			<a href="index.html" class="btn">Go Home<i class="fas fa-home"></i></a>
+		</div>
+	</div>
+	<script src="end.js"></script>
+</body>
+</html>

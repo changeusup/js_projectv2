@@ -1,0 +1,201 @@
+body {
+	background-color: rgb(255, 202, 56);
+}
+
+@font-face {
+    font-family: 'netmarbleB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.1/netmarbleB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-size: 62.5%;
+	font-family: 'netmarbleB', sans-serif; /* */
+}
+
+img {
+	width: 200px; padding-bottom: 50px; 
+}
+
+.bee {position: absolute; right: 300px; z-index: 99; animation: fly 1s ease-in-out infinite;
+}
+
+@keyframes fly {
+	0%{top: 0;}
+
+	50% {top: 100px;}
+
+	100% {top: 0;}
+}
+
+.cloud1{
+	position: absolute; height:100px; width: 100px; top: 100px; left: 150px; 
+	background-image: url("cloud.svg"); animation: cloud 10s linear infinite; z-index: -1;
+}
+
+.cloud2{
+	position: absolute; height:220px; width: 220px; top: 200px; left: 150px; 
+	background-image: url("cloud.svg"); animation: cloud 5s linear infinite; z-index: -1;
+}
+
+.cloud3{
+	position: absolute; height:140px; width: 140px; top: 150px; left: 150px; 
+	background-image: url("cloud.svg"); animation: cloud 3s linear infinite; z-index: -1;
+}
+
+@keyframes cloud {
+	0%{left: -150px;}
+	100%{left: 100%;}
+}
+
+h1 {
+	font-size: 5.4rem;
+	color: midnightblue;
+	margin-bottom: 5rem;
+	justify-content: center;
+}
+
+h2 {
+	font-size: 4.2rem;
+	margin-bottom: 4rem;
+}
+
+h5 {
+	font-size: 2rem;
+	margin-top: -20px;
+	margin-bottom: 3rem;
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 80rem;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-center {
+	justify-content: center;
+	align-items: center;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+.btn {
+	font-size: 2.4rem;
+	padding: 2rem 0;
+	width: 30rem;
+	text-align: center;
+	margin-bottom: 1rem;
+	text-decoration: none;
+	color: rgb(28, 26, 26);
+	background: turquoise;
+	border-radius: 4px;
+}
+
+
+.btn:hover {
+	cursor: pointer;
+	box-shadow: 0 0.4rem 1.4rem 0 turquoise;
+	transition: transform 150ms;
+	transform: scale(1.03);
+}
+
+.btn[disabled]:hover {
+	cursor: not-allowed;
+	box-shadow: none;
+	transform: none;
+}
+
+#highscore-btn {
+	background: orangered;
+}
+
+#highscore-btn:hover {
+	box-shadow: 0 0.4rem 1.4rem 0 orangered;
+}
+
+/* end page css */
+.end-form-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 30rem;
+}
+
+input {
+	margin-bottom: 1rem;
+	width: 20rem;
+	padding: 1.5rem;
+	font-size: 1.8rem;
+	border: none;
+	box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+}
+
+input::placeholder {
+	color: #aaa;
+}
+
+#username {
+	margin-bottom: 3rem;
+	width: 100%;
+	outline: none;
+}
+
+#end-text {
+	font-size: 2.4rem;
+	color: #fff;
+	text-align: center;
+}
+
+#saveScoreBtn {
+	border: none;
+}
+
+#reaction{
+	display: none;
+	width: 25vw; 
+	height: 25vw; 
+	position: absolute; 
+	left: 50vw; 
+	top: 50vh; 
+	transform: translate(-50%,-50%); 
+	background: blue; 
+	color: white; 
+	text-align: center; 
+	line-height: 50vh; 
+	z-index: 666;
+	font-size: 36px;
+}
+
+
+
+
+
+
+
+
+
